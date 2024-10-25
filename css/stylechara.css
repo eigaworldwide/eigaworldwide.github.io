@@ -8261,3 +8261,31 @@ h1, h2, h3, h4, h5,
   [data-toggle="collapse"].collapsed:hover {
     background: #ececec !important;
     border-bottom: 2px solid #ececec; }
+
+#topform1 {
+  border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;
+}
+
+#topform2 {
+  border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt;
+}
+
+#topform3 {
+  border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);
+}
+
+#topform4 {
+  border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom;
+}
+
+#topform5 {
+  border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-size: 12pt; text-align: right;
+}
+
+#topform6 {
+  border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-size: 12pt;
+}
+
+#height21 {
+  height: 21px;
+}
