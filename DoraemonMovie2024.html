@@ -29,8 +29,34 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1476881614223787"
      crossorigin="anonymous"></script>
 
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 </head>
 <body>
+
+  <script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Area', 'Mhl'],
+  ['東アジア',22059151],
+  ['東南アジア・大洋洲',6550896],
+  ['南西アジア・中東・アフリカ',0],
+  ['欧州・中央アジア及びコーカサス',0],
+  ['北米',0],
+  ['中南米',0]
+]);
+
+var options = {
+  title:'海外興行収入構成比'
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('OS_Chart'));
+  chart.draw(data, options);
+}
+</script>
 
   <div class="site-wrap">
 
@@ -59,19 +85,19 @@
 
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li><a href="index.html">ホーム</a></li>
-                <li><a href="single.html">興行収入一覧</a></li>
+                <li><a href="movie.html">興行収入一覧</a></li>
                 <li class="has-children">
                   <a href="">ランキング</a>
                   <ul class="dropdown">
-                    <li><a href="ranking-japan.html">日本</a></li>
+                    <li><a href="JP/Top.html">日本</a></li>
                     <li><a href="OS.html">海外</a></li>
                     <li><a href="Worldwide.html">全世界</a></li>
-                    <li><a href="ranking-eastasia.html">東アジア</a></li>
-                    <li><a href="ranking-southeastasia.html">東南アジア・大洋洲</a></li>
-                    <li><a href="ranking-others.html">南アジア・中東・アフリカ</a></li>
-                    <li><a href="ranking-europe.html">欧州・CIS</a></li>
-                    <li><a href="ranking-northamerica.html">北米</a></li>
-                    <li><a href="ranking-latina.html">中南米</a></li>
+                    <li><a href="EastAsia.html">東アジア</a></li>
+                    <li><a href="SouthEastAsia.html">東南アジア・大洋洲</a></li>
+                    <li><a href="Other.html">南西アジア・中東・アフリカ</a></li>
+                    <li><a href="EU.html">欧州・中央アジア及びコーカサス</a></li>
+                    <li><a href="NA.html">北米</a></li>
+                    <li class="active"><a href="Latin.html">中南米</a></li>
                   </ul>
                 </li>
                 <li><a href="blog.html">記事一覧</a></li>
@@ -96,186 +122,359 @@
       </div>
       
     </header>
-   
-
-<div class="site-section"  data-aos="fade">
-      <div class="container-fluid">
-
-        <div class="row justify-content-center">
-
-          <div class="col-md-7">
-            <div class="row mb-5">
-              <div class="col-12 ">
-                <h2 class="site-section-heading text-center">映画ドラえもん のび太の地球交響楽</h2>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="row" id="lightgallery">
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="images/doraemon2024.jpg" data-sub-html="<h4>2024</h4><p>映画ドラえもん のび太の地球交響楽</p>">
-            <a href="#"><img src="images/doraemon2024.jpg" alt="IMage" class="img-fluid"></a>
-          </div>
-          
-        <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
-              <h3 class="text-white h4">世界興行収入</h3>
-              <p>Worldwide Box Office</p>
-              <h3><strong class="font-weight-bold text-primary">円：¥8,617,360,492</strong></h3>
-              <h3><strong class="font-weight-bold text-primary">ドル：$56,222,196</strong></h3>
-
-              <p>・</p>
-
-              <h3 class="text-white h4">海外興行収入</h3>
-              <p>International Box Office</p>
-              <h3><strong class="font-weight-bold text-primary">ドル：$27,819,813</strong></h3>
-
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-6 col-xl-4 text-center mb-5 mb-lg-5">
-            <div class="h-100 p-4 p-lg-5 site-block-feature-7">
-              <h3 class="text-white h4">日本興行収入</h3>
-              <p>Japan Box Office</p>
-              <h3><strong class="font-weight-bold text-primary">42.7億円</strong></h3>
-              <p>動員：356.3万人</p>
-              <p>公開日：2024年3月1日（金）</p>
-              <p>配給：東宝</p>
+    
 
 
-
-            </div>
-          </div>
-
-        </div>
-
-      
-      </div>
-
-</div>
-
-<google-sheets-html-origin style=""><table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" data-sheets-baot="1" style="table-layout: fixed; font-size: 10pt; font-family: Arial; width: 0px; border-collapse: collapse; border: medium;">
-  <colgroup><col width="300"><col width="100"><col width="150"><col width="150"><col width="150"><col width="150"></colgroup>
+<google-sheets-html-origin style=""><table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" data-sheets-root="1" data-sheets-baot="1" style="table-layout: fixed; font-size: 10pt; font-family: Arial; width: 0px; border-collapse: collapse; border: medium;" align="center">
+  <colgroup><col width="100"><col width="250"><col width="100"><col width="180"><col width="160"><col width="160"><col width="160"><col width="100"></colgroup>
   <tbody>
     <tr style="height: 50px;">
-      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(47, 79, 79); font-size: 12pt; font-weight: bold; color: rgb(217, 217, 217);">日本</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 60px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="10" colspan="1" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; font-weight: bold; text-align: center;"><div style="max-height: 246px;"><img src="images/doraemon2024.jpg" alt="IMage" class="img-fluid" width="180" height="255"></div></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="4" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold;"><span style="font-size: 14pt;">映画ドラえもん のび太の地球交響楽</span><span style="font-size: 14pt; color: rgb(153, 153, 153);">&nbsp;(2024)</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
     </tr>
     <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">公開日</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(42, 90, 90); font-size: 12pt; overflow-wrap: break-word; color: rgb(217, 217, 217); text-align: right;">観客動員数</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入（円）</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入（ドル）</td>
-    </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; text-decoration: underline; color: rgb(217, 217, 217);"><a class="in-cell-link" href="https://eigaworldwide.github.io/DoraemonMovie2024/JP.html" target="_blank">🇯🇵日本</a></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/03/01</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥4,270,000,000</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥4,270,000,000</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$28,402,383</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: top; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="2" colspan="4" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: top; background-color: rgb(255, 255, 255); font-size: 12pt;"><div style="max-height: 71px;">Doraemon the Movie: Nobita's Earth Symphony</div></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
     <tr style="height: 50px;">
-      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(47, 79, 79); font-size: 12pt; font-weight: bold; color: rgb(217, 217, 217);">東アジア</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: top; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
     <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">公開日</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(42, 90, 90); font-size: 12pt; overflow-wrap: break-word; color: rgb(217, 217, 217); text-align: right;">観客動員数</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入（円）</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入（ドル）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="4" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(217, 217, 217) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold;">公開日：2024年3月1日（金）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
     <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">🇨🇳中国</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/05/31</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">RMB¥130,984,600</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">3,523,884</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥2,838,967,310</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$18,086,799</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: top; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="2" colspan="4" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: top; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold;"><div style="max-height: 42px;">配給：東宝</div></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
     <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">🇭🇰香港</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/08/01</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">HK$13,919,700</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥266,654,419</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$1,781,288</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: top; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; text-decoration: underline; color: rgb(217, 217, 217);"><a class="in-cell-link" href="https://eigaworldwide.github.io/DoraemonMovie2024/TW.html" target="_blank">🇹🇼台湾</a></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/07/12</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">NT$42,865,462</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">174,337</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥209,384,796</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$1,322,943</td>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt;">興行収入</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">円</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">米ドル</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">構成比（ドル）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; text-decoration: underline; color: rgb(217, 217, 217);"><a class="in-cell-link" href="https://eigaworldwide.github.io/DoraemonMovie2024/SK.html" target="_blank">🇰🇷韓国</a></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/07/10</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">₩858,823,300</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">102,728</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥97,337,486</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$620,640</td>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt;">日本</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">¥4,310,000,000</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$28,715,721</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">50.09%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt;">海外</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">¥4,468,681,135</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$28,610,047</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">49.91%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt;">全世界</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">¥8,778,681,135</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$57,325,768</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">-</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
     <tr style="height: 50px;">
-      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(47, 79, 79); font-size: 12pt; font-weight: bold; color: rgb(217, 217, 217);">東南アジア・大洋洲</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">公開日</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(42, 90, 90); font-size: 12pt; overflow-wrap: break-word; color: rgb(217, 217, 217); text-align: right;">観客動員数</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入（円）</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">興行収入（ドル）</td>
+    <tr style="height: 480px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; font-weight: bold; text-align: center;"><div style="max-height: 340px;"><div id="OS_Chart" style="width:100%; max-width:1200px; height:400px;"></div>
+</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">🇻🇳ベトナム</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/05/18</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">₫147,488,927,561</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">1,691,769</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥902,058,690</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$5,796,678</td>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="4" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">🇮🇩インドネシア</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/07/17</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">59,940</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥27,982,959</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$179,820</td>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold;">日本オープニング週末興行収入</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="2" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold;">地域別（海外）興行収入</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">米ドル</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">構成比（ドル）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">🇲🇾マレーシア</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/07/25</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">RM 76,670</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥2,515,069</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$16,424</td>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">（金・土・日）3日間</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="2" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">東アジア</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$22,059,151</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">77.1%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; text-decoration: underline; color: rgb(217, 217, 217);"><a class="in-cell-link" href="https://eigaworldwide.github.io/DoraemonMovie2024/AUS.html" target="_blank">🇦🇺オーストラリア</a></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/07/11</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">A$17,875</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥1,950,276</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$12,068</td>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">興行収入</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="2" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">東南アジア・大洋洲</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$6,550,896</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">22.9%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
     </tr>
-    <tr style="height: 21px;">
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(147, 196, 125); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">🇳🇿ニュージーランド</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217);">2024/07/11</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">NZ$5,160</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90);"></td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(47, 79, 79) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">¥509,487</td>
-      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(147, 196, 125) rgb(147, 196, 125) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(42, 90, 90); font-size: 12pt; color: rgb(217, 217, 217); text-align: right;">$3,153</td>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold;">¥655,555,580</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="2" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">南西アジア・中東・アフリカ</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$0</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">0.0%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
     </tr>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">観客動員数</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="2" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">欧州・中央アジア及びコーカサス</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$0</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">0.0%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold;">538,020</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="2" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">北米</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$0</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">0.0%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="2" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">中南米</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 14pt; font-weight: bold; text-align: right;">$0</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(111, 168, 220) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">0.0%</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 30px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="4" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(111, 168, 220) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 100px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; font-weight: bold;">日本</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold;">公開日</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（LC）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; overflow-wrap: break-word; text-align: right;">観客動員数</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（円）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（ドル）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">日本<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Japan</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/03/01</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">4,310,000,000</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">3,563,269</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥4,310,000,000</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$28,715,721</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 60px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; font-weight: bold;">東アジア</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold;">公開日</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（LC）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">観客動員数</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（円）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(217, 217, 217); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（ドル）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">中国<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">China</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/05/31</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">130,994,800</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">3,524,220</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥2,843,597,348</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$18,113,469</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">香港<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Hong Kong</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/08/01</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">14,549,870</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥278,847,635</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$1,861,976</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">台湾<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Taiwan</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/07/12</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">43,216,872</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">175,688</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥211,101,327</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$1,333,788</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">韓国<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">South Korea</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/07/10</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">859,962,300</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">102,856</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥100,263,163</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$621,463</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">マカオ<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Macau</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/08/01</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">1,033,713</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥19,237,166</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$128,454</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 60px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td rowspan="1" colspan="6" style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255); font-size: 12pt; font-weight: bold;">東南アジア・大洋洲</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(204, 204, 204);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(204, 204, 204); font-size: 12pt; font-weight: bold;">公開日</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(204, 204, 204); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（LC）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(204, 204, 204); font-size: 12pt; font-weight: bold; text-align: right;">観客動員数</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(204, 204, 204); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（円）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(204, 204, 204); font-size: 12pt; font-weight: bold; text-align: right;">興行収入（ドル）</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">ベトナム<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Vietnam</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/05/18</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">147,525,382,561</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">1,691,769</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥902,638,237</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$5,798,110</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">タイ<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Thailand</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/10/03</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">17,000,000</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥75,750,315</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$516,757</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">インドネシア<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Indonesia</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/07/17</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">59,940</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥28,476,475</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$179,820</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">マレーシア<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Malaysia</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/07/25</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥6,311,581</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$41,000</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">オーストラリア<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">Australia</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/07/11</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">17,875</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥1,950,276</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$12,068</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 40px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;"><span style="font-size: 12pt;">ニュージーランド<br></span><span style="font-size: 10pt; color: rgb(183, 183, 183);">New Zealand</span></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt;">2024/07/11</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">5,160</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">¥507,610</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(118, 165, 175) rgb(118, 165, 175) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255); font-size: 12pt; text-align: right;">$3,141</td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: middle; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    <tr style="height: 60px;">
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+      <td style="border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(255, 255, 255) rgb(255, 255, 255) rgb(204, 204, 204); border-image: none; overflow: hidden; padding: 2px 3px; vertical-align: bottom; background-color: rgb(255, 255, 255);"></td>
+    </tr>
+    
   </tbody>
 </table></google-sheets-html-origin>
 
 <div class="footer py-4">
       <div class="container-fluid text-center">
         <p>
-          © 2023 eigaworldwide All Rights Reserved.
+          © eigaworldwide All Rights Reserved.
         </p>
       </div>
     </div>
